@@ -3,7 +3,7 @@
 # emailed to them, and a link displayed to selection in the terminal
 
 import sys
-from models import Feed
+from models import Feeds
 
 # List of available feeds
 feeds = ['usa headlines','international headlines','world','usa','ny','business','technology','sports','science','health','arts','style','travel','magazine','jobs','real estate','autos', 'after deadline blog', 'lens blog', 'the public editor', 'wordlay blog', 'obituaries','times wire', 'most e-mailed', 'most shared','most viewed', 'columnists', 'editorials', 'op-eds', 'opinionator', 'blogs', 'sunday review', 'letters', 'video', 'international opinion']

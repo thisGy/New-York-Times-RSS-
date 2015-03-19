@@ -1,6 +1,6 @@
 class Feeds(object):
 	def __init__(self):
-		this.feeds = {
+		self.feeds = {
 			'usa headlines' : 'http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml',
 			'international headlines' : 'http://rss.nytimes.com/services/xml/rss/nyt/InternationalHome.xml',
 			'world' : {
@@ -132,7 +132,7 @@ class Feeds(object):
 	def get_feed(self, selected_feed, feed_list):
 		pass
 
-	def has_subcat(feed_key):
+	def has_feed(self, feed_key):
 		if feed_key:
 			return true
 		else:
@@ -140,3 +140,19 @@ class Feeds(object):
 	
 	def feed_exists(self, test):
 		pass
+	def help(self):
+		""" Help command """
+		print "Welcome to the New York Times RSS feed finder.  You can run this script by searching by using the category argument as the first argument and the feed as the second argument.  The list of categoies is as follows:"
+		for key in self.feeds:
+			print "%s" %key
+		print "So for example you can search for 'World news by running the command' \n"
+		print "python nytimes_feed.py world \n"
+		print "You will then be presesnted with a list of feeds to choose from.  So when it asks you which feed you would simplyt type the feed name and Poof!  Your feed will magically appear in your default web browser! Magic! Not quite, but still pretty cool!"
+		print "Hope you enjoy this and feel free to check out more of my stuff on GitHub.  Happy parsing! :-) \n"
+		print "- Ev \n"
+		print ".........................................\n"
+		print "https://www.github.com/thisGy"
+		print "http://www.evanburawa.com"
+		print "https://www.twitter.com/evanburawa"
+		print "evan.burawa@gmail.com\n"
+
